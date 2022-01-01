@@ -1,1 +1,8 @@
-hello world
+name: first hello world
+on: [push]
+jobs:
+    print-hello-world: 
+        rest-on: ubuntu-latest
+        steps:
+            - run: echo hello world
+            - run: echo step2
